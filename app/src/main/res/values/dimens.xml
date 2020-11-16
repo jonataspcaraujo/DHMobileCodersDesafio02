@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="imageOnFocusWidth">250dp</dimen>
-    <dimen name="imageOnFocusHaight">250dp</dimen>
+    <dimen name="imageOnFocusWidth">500dp</dimen>
+    <dimen name="imageOnFocusHaight">500dp</dimen>
     <dimen name="appBarTitleHeight">84dp</dimen>
     <dimen name="titleTextSize_sp">27sp</dimen>
     <dimen name="titleTopMargin_dp">25dp</dimen>

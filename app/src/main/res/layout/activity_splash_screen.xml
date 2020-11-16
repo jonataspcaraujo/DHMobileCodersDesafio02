@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/ivSplashScreenImage"
-        android:layout_width="@dimen/imageOnFocusWidth"
-        android:layout_height="@dimen/imageOnFocusHaight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:src="@drawable/ic_baseline_fastfood_24"/>
 
