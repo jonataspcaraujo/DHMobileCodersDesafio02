@@ -1,4 +1,4 @@
-package com.example.dhmobilecodersdesafio02
+package com.example.dhmobilecodersdesafio02.view
 
 
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.example.dhmobilecodersdesafio02.R
 
 class SplashScreenActivity : AppCompatActivity() {
     // This is the loading time of the splash screen
@@ -28,7 +29,7 @@ class SplashScreenActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             // This method will be executed once the timer is over
             // Start your app main activity
-            startActivity(Intent(this,LoginScreenActivity::class.java))
+            startActivity(Intent(this, LoginScreenActivity::class.java))
 
             //close this activity
             finish()

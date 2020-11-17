@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DHMobileCodersDesafio02">
-        <activity android:name=".DetailItemScreenActivity">
+        <activity android:name=".view.DetalheScreenActivity">
         </activity>
-        <activity android:name=".ItemScreenActivity">
+        <activity android:name=".view.PratoScreenActivity">
         </activity>
-        <activity android:name=".HomeScreenActivity">
+        <activity android:name=".view.RestauranteScreenActivity">
         </activity>
-        <activity android:name=".RegisterScreenActivity" />
-        <activity android:name=".LoginScreenActivity" />
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".view.RegisterScreenActivity" />
+        <activity android:name=".view.LoginScreenActivity" />
+        <activity android:name=".view.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +27,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".view.MainActivity" />
     </application>
 
 </manifest>

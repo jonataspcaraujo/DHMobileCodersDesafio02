@@ -11,4 +11,6 @@
     <color name="buttonLogin">#FF5252</color>
     <color name="buttonRegister">#8492A6</color>
     <color name="menu_title_color">#5A6978</color>
+    <color name="til_color_hit">#8492A6</color>
+    <color name="til_helper_text_color">#8492A6</color>
 </resources>

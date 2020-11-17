@@ -6,4 +6,7 @@
     <string name="hintPassword">Password</string>
     <string name="hintName">Name</string>
     <string name="item_text_description">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaqueipsa, quae ab illo inventore veritatis.</string>
+    <string name="button_login">LOG IN</string>
+    <string name="button_register">REGISTER</string>
+    <string name="app_bar_title">Register</string>
 </resources>

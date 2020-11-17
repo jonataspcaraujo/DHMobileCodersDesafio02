@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginScreenActivity">
-
+    tools:context=".view.LoginScreenActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -25,6 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/AppBarTitle"
+                android:layout_marginStart="@dimen/titleStartMargin_dp"
                 style="@style/AppBarTitle"/>
 
         </com.google.android.material.appbar.AppBarLayout>
@@ -87,7 +87,7 @@
             android:id="@+id/btLoginLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOG IN"
+            android:text="@string/button_login"
             android:textColor="@color/white"
             android:textSize="@dimen/buttonTextSize"
             android:background="@drawable/custon_login_button"
@@ -143,7 +143,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintVertical_bias="1.0"
-            android:text="REGISTER"
+            android:text="@string/button_register"
             android:textSize="@dimen/buttonTextSize"
             android:textColor="@color/white"
             android:background="@drawable/custon_register_button"
