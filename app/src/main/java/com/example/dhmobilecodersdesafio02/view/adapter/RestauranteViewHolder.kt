@@ -1,4 +1,4 @@
-package com.example.dhmobilecodersdesafio02.viewModel
+package com.example.dhmobilecodersdesafio02.view.adapter
 
 import android.view.View
 import android.widget.ImageView

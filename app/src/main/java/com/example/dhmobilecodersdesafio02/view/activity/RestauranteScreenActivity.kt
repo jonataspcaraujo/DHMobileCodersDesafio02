@@ -1,4 +1,4 @@
-package com.example.dhmobilecodersdesafio02.view
+package com.example.dhmobilecodersdesafio02.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.dhmobilecodersdesafio02.model.Prato
 import com.example.dhmobilecodersdesafio02.R
 import com.example.dhmobilecodersdesafio02.model.Restaurante
+import com.example.dhmobilecodersdesafio02.view.adapter.RestauranteAdapter
 
 class RestauranteScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

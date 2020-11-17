@@ -1,4 +1,4 @@
-package com.example.dhmobilecodersdesafio02.view
+package com.example.dhmobilecodersdesafio02.view.activity
 
 
 import android.content.Intent
@@ -20,20 +20,13 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         val imageSplash = "https://c.pxhere.com/photos/c8/ea/appetizer_bowl_delicious_dish_epicure_food_fries_guacamole-1557385.jpg!d"
-//        ivSplashScreenImage
         findViewById<ImageView>(R.id.ivSplashScreenImage).apply {
             Glide.with(this@SplashScreenActivity).load(imageSplash).into(this)
         }
 
-        //deprecated method. Find another way later
         Handler(Looper.getMainLooper()).postDelayed({
-            // This method will be executed once the timer is over
-            // Start your app main activity
             startActivity(Intent(this, LoginScreenActivity::class.java))
-
-            //close this activity
             finish()
-
         }, SPLASH_TIME_OUT)
 
     }

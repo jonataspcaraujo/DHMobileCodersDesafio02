@@ -1,13 +1,14 @@
-package com.example.dhmobilecodersdesafio02.view
+package com.example.dhmobilecodersdesafio02.view.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.dhmobilecodersdesafio02.viewModel.RestauranteViewHolder
 import com.example.dhmobilecodersdesafio02.R
 import com.example.dhmobilecodersdesafio02.model.Restaurante
+import com.example.dhmobilecodersdesafio02.view.activity.PratoScreenActivity
+import com.example.dhmobilecodersdesafio02.view.activity.RestauranteScreenActivity
 import com.squareup.picasso.Picasso
 
 class RestauranteAdapter(
@@ -15,9 +16,7 @@ class RestauranteAdapter(
         private val restauranteView: RestauranteScreenActivity
 ): RecyclerView.Adapter<RestauranteViewHolder>() {
 
-    private val itView = PratoScreenActivity()
 
-    //referencia o layout do item
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestauranteViewHolder {
         val view= LayoutInflater.from(parent.context).inflate(R.layout.restaurante_list_menu,parent,false)
         return RestauranteViewHolder(view)
@@ -33,13 +32,17 @@ class RestauranteAdapter(
 
         holderRestaurante.imgView.setOnClickListener(View.OnClickListener {
           val intent = Intent(restauranteView, PratoScreenActivity::class.java)
-          intent.putExtra("restaurante",itemList[position])
+          intent.putExtra(KEY_RESTAURATE,itemList[position])
             restauranteView.startActivity(intent)
         })
     }
 
     override fun getItemCount(): Int {
         return  itemList.size
+    }
+
+    companion object {
+        const val KEY_RESTAURATE = "restaurante"
     }
 
 }

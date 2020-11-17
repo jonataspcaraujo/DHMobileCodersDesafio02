@@ -1,13 +1,14 @@
-package com.example.dhmobilecodersdesafio02.view
+package com.example.dhmobilecodersdesafio02.view.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.dhmobilecodersdesafio02.viewModel.PratoViewHolder
 import com.example.dhmobilecodersdesafio02.model.Prato
 import com.example.dhmobilecodersdesafio02.R
+import com.example.dhmobilecodersdesafio02.view.activity.DetalheScreenActivity
+import com.example.dhmobilecodersdesafio02.view.activity.PratoScreenActivity
 import com.squareup.picasso.Picasso
 
 class PratoAdapter(
@@ -23,22 +24,21 @@ class PratoAdapter(
         Picasso.get().load(itemList[position].itemPicture).into((holderPrato.imgView))
         holderPrato.txtItemTitle.text = itemList[position].itemTitle
 
-//        holderPrato.imgView.setOnClickListener(View.OnClickListener {
-//            val intent = Intent(pratoView, DetalheScreenActivity::class.java)
-//            pratoView.startActivity(intent)
-//        })
         holderPrato.imgView.setOnClickListener(View.OnClickListener {
             val intent = Intent(pratoView, DetalheScreenActivity::class.java)
-            intent.putExtra("prato",itemList[position])
+            intent.putExtra(KEY_PRATO,itemList[position])
             pratoView.startActivity(intent)
         })
-
-
 
     }
 
     override fun getItemCount(): Int {
         return itemList.size
     }
+
+    companion object {
+        const val KEY_PRATO = "prato"
+    }
+
 
 }

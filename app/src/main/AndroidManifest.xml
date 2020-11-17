@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DHMobileCodersDesafio02">
-        <activity android:name=".view.DetalheScreenActivity">
+        <activity android:name=".view.activity.DetalheScreenActivity">
         </activity>
-        <activity android:name=".view.PratoScreenActivity">
+        <activity android:name=".view.activity.PratoScreenActivity">
         </activity>
-        <activity android:name=".view.RestauranteScreenActivity">
+        <activity android:name=".view.activity.RestauranteScreenActivity">
         </activity>
-        <activity android:name=".view.RegisterScreenActivity" />
-        <activity android:name=".view.LoginScreenActivity" />
-        <activity android:name=".view.SplashScreenActivity">
+        <activity android:name=".view.activity.RegisterScreenActivity" />
+        <activity android:name=".view.activity.LoginScreenActivity" />
+        <activity android:name=".view.activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
